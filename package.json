@@ -1,0 +1,19 @@
+{
+  "name": "doctorsageassistant",
+  "version": "1.0.0",
+  "description": "An AI asssitant to Doctors",
+  "main": "telegram-message-sender.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^1.6.0",
+    "dotenv": "^16.3.1",
+    "node-fetch": "^3.3.2",
+    "express": "^5.1.0",
+    "googleapis": "^159.0.0"
+  },
+  "type": "module"
+}

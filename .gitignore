@@ -1,0 +1,6 @@
+discarded/**
+node_modules/**
+*.env
+token.json
+credentials.json
+service-account-key.json
