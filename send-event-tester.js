@@ -1,5 +1,8 @@
 import fetch from 'node-fetch';
 import sendMessage from './utils/telegram-message-sender.js';
+import dotenv from 'dotenv';
+
+dotenv.config();
 
 async function createEventWithFetch() {
   const url = 'http://localhost:3000/create-event';
@@ -9,7 +12,7 @@ async function createEventWithFetch() {
     start: '2025-09-18T14:00:00+05:30',
     end: '2025-09-18T15:00:00+05:30',
     timeZone: 'Asia/Kolkata',
-    attendees: ['muskangupta072000@gmail.com'],
+    attendees: [process.env.TEST_EMAIL],
   };
 
   try {
